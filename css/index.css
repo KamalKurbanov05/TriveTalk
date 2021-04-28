@@ -63,7 +63,6 @@ body {
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header__link-section {
@@ -75,7 +74,7 @@ body {
 .header__link-section:hover {
     border-bottom: 2px solid #22356F;
     font-weight: 700;
-
+    padding-bottom: 20px;
 }
 
 .header__img-block {
@@ -97,16 +96,27 @@ body {
 .header__ellipse-mint {
     position: absolute;
     z-index: 2;
-    top: -50px;
-    right: -30px;
-    width: 544px;
-    height: 807px;
+    top: 0px;
+    right: -170px;
+    width: 843px;
+    height: 649px;
     border-radius: 312px;
     background-color: #EDFDFF;
-    transform: rotate(25deg);
+    transform: rotate(110deg);
 }
 
-.header__contact_us_link {
+.header__ellipse-img {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    right: -70px;
+    width: 807px;
+    height: 544px;
+    background-image: url('../image/helping_you_thrive.png');
+    clip-path: inset(20px 20px 20px round 312px);
+}
+
+.header__contact-us-link {
     width: 150px;
     height: 50px;
     padding: 20px 30px 20px 30px;
@@ -121,18 +131,18 @@ body {
     transition: background-color .5s ease-in-out;
 }
 
-.header__contact_us_link:hover {
+.header__contact-us-link:hover {
     background-color: #008aff
 }
 
-.header__contact_us_link:active {
+.header__contact-us-link:active {
     background-color: #008aff
 
 }
 
 /*******helping_you_thrive********/
 
-.helping_you_thrive {
+.helping-you-thrive {
     min-height: 840px;
     padding: 164px 0px 75px 179px;
     display: flex;
@@ -140,13 +150,13 @@ body {
     background-color: #F4F9E2;
 }
 
-.helping_you_thrive__content {
+.helping-you-thrive__content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.helping_you_thrive__heading {
+.helping-you-thrive__heading {
     font-size: 24px;
     color: var(--sky-color);
     font-weight: 700;
@@ -154,7 +164,7 @@ body {
     margin-bottom: 19px
 }
 
-.helping_you_thrive__descriptions {
+.helping-you-thrive__descriptions {
     font-size: 48px;
     font-weight: 700;
     color: var(--dark-blue-color);
@@ -162,7 +172,7 @@ body {
     width: 484px
 }
 
-.helping_you_thrive__text {
+.helping-you-thrive__text {
     font-size: 24px;
     color: var(--dark-blue-color);
     width: 469px;
@@ -171,11 +181,11 @@ body {
     margin-bottom: 63px;
 }
 
-.helping_you_thrive__link-block {
+.helping-you-thrive__link-block {
     display: flex;
 }
 
-.helping_you_thrive__link {
+.helping-you-thrive__link {
     width: 150px;
     height: 50px;
     display: flex;
@@ -186,7 +196,7 @@ body {
     transition: color, background-color .5s ease-in-out;
 }
 
-.helping_you_thrive__link:hover {
+.helping-you-thrive__link:hover {
     background-color: #FA8128;
 }
 
@@ -201,8 +211,79 @@ body {
     color: #F4F9E2;
 }
 
-.helping_you_thrive__link:active {
+.helping-you-thrive__link:active {
     background-color: #FA8128;
     color: #F4F9E2;
 }
 
+
+/******why_thrive******/
+
+.why-thrive {
+    width: 100%;
+    min-height: 604px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--sky-color);
+}
+
+.why-thrive__content {
+    width: 70%;
+    padding: 150px 180px 95px 78px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.why-thrive__heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.why-thrive__bold-text {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #FFFFFF
+}
+
+.why-thrive__text {
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF
+}
+
+.why-thrive__img {
+    width: 525px;
+    height: 604px;
+    background-image: url('../image/why_thrive.png');
+}
+
+/*******about-us******/
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 424px 0px 106px;
+    min-height: 361px;
+    background-color: #FFFFFF;
+}
+
+.about-us__heading {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--dark-blue-color);
+    font-weight: 400;
+    min-width: 100px;
+    margin-top: 8px;
+}
+
+.about-us__text {
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--dark-blue-color);
+    font-weight: 500px;
+    width: 592px;
+    min-height: 210px;
+}
