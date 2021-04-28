@@ -28,14 +28,16 @@ body {
 /******header*******/
 
 .header {
-    position: absolute;
-    top: 0; 
+    /* position: absolute; */
+    /* top: 0;  */
+    overflow: hidden;
     width: 100%;
     padding: 27px 131px 0px 179px; 
     min-height: 77px;
     display: flex;
-    justify-content: space-around;
-    background-color: #E5E5E5;
+    /* justify-content: space-between; */
+    background-color: #F4F9E2;
+    align-items: center;
 }
 
 .header__logo {
@@ -45,23 +47,63 @@ body {
 }
 
 .header__nav {
+    position: absolute;
+    right: 150px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    height: 50px;
+}
+
+.header__block-link {
     min-width: 233px;
     height: 14px;
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__link-section {
     font-size: 14px;
     font-weight: 300;
+    transition: color, border .2s ease-in-out;
 }
 
 .header__link-section:hover {
-    padding-bottom: 20px;
     border-bottom: 2px solid #22356F;
     font-weight: 700;
 
+}
+
+.header__img-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__rectangle {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 323px;
+    height: 917px;
+    background-color: #FFFFFF;
+}
+
+.header__ellipse-mint {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    right: -30px;
+    width: 544px;
+    height: 807px;
+    border-radius: 312px;
+    background-color: #EDFDFF;
+    transform: rotate(25deg);
 }
 
 .header__contact_us_link {
@@ -76,4 +118,91 @@ body {
     display: flex;
     align-items: center;
     line-height: 16px;
+    transition: background-color .5s ease-in-out;
 }
+
+.header__contact_us_link:hover {
+    background-color: #008aff
+}
+
+.header__contact_us_link:active {
+    background-color: #008aff
+
+}
+
+/*******helping_you_thrive********/
+
+.helping_you_thrive {
+    min-height: 840px;
+    padding: 164px 0px 75px 179px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F9E2;
+}
+
+.helping_you_thrive__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.helping_you_thrive__heading {
+    font-size: 24px;
+    color: var(--sky-color);
+    font-weight: 700;
+    min-height: 64px;
+    margin-bottom: 19px
+}
+
+.helping_you_thrive__descriptions {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--dark-blue-color);
+    min-height: 167px;
+    width: 484px
+}
+
+.helping_you_thrive__text {
+    font-size: 24px;
+    color: var(--dark-blue-color);
+    width: 469px;
+    min-height: 160px;
+    line-height: 42px;
+    margin-bottom: 63px;
+}
+
+.helping_you_thrive__link-block {
+    display: flex;
+}
+
+.helping_you_thrive__link {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-color);
+    color: #FFFFFF;
+    transition: color, background-color .5s ease-in-out;
+}
+
+.helping_you_thrive__link:hover {
+    background-color: #FA8128;
+}
+
+.i-do {
+    background-color: #F4F9E2;
+    margin-left: 38px;
+    color: var(--orange-color);
+}
+
+.i-do:hover {
+    background-color: var(--orange-color);
+    color: #F4F9E2;
+}
+
+.helping_you_thrive__link:active {
+    background-color: #FA8128;
+    color: #F4F9E2;
+}
+
