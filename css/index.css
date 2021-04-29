@@ -4,13 +4,17 @@
     padding: 0;
 }
 
+ul, li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
 }
 
 body {
-    font-family: 'Larsseit';
+    font-family: 'Larsseit', sans-serif;
     font-weight: 400;
 }
 
@@ -22,22 +26,28 @@ body {
 }
 
 .container {
+    width: 1440px;
+    margin: 0 auto
+}
+
+section {
     width: 100%;
 }
 
 /******header*******/
 
 .header {
-    /* position: absolute; */
-    /* top: 0;  */
+    position: absolute;
+    top: 0;
+    width: 1440px; 
     overflow: hidden;
-    width: 100%;
     padding: 27px 131px 0px 179px; 
     min-height: 77px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     background-color: #F4F9E2;
     align-items: center;
+    z-index: 5
 }
 
 .header__logo {
@@ -47,9 +57,6 @@ body {
 }
 
 .header__nav {
-    position: absolute;
-    right: 150px;
-    z-index: 5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,24 +64,40 @@ body {
     height: 50px;
 }
 
-.header__block-link {
+.header__list-link {
     min-width: 233px;
     height: 14px;
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
+    
+}
+
+.header__link-item {
+    position: relative;
 }
 
 .header__link-section {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     transition: color, border .2s ease-in-out;
 }
 
 .header__link-section:hover {
-    border-bottom: 2px solid #22356F;
+    color: var(--dark-blue-color);
     font-weight: 700;
-    padding-bottom: 20px;
+}
+
+
+.header__link-section:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -18px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--dark-blue-color);
+
 }
 
 .header__img-block {
@@ -119,7 +142,6 @@ body {
 .header__contact-us-link {
     width: 150px;
     height: 50px;
-    padding: 20px 30px 20px 30px;
     border-radius: 50px;
     color: #FFFFFF;
     background-color: var(--sky-color);
@@ -127,8 +149,10 @@ body {
     font-size: 13px;
     display: flex;
     align-items: center;
+    justify-content: center;
     line-height: 16px;
     transition: background-color .5s ease-in-out;
+    text-transform: uppercase;
 }
 
 .header__contact-us-link:hover {
@@ -169,7 +193,8 @@ body {
     font-weight: 700;
     color: var(--dark-blue-color);
     min-height: 167px;
-    width: 484px
+    width: 484px;
+    text-transform: uppercase;
 }
 
 .helping-you-thrive__text {
@@ -194,6 +219,7 @@ body {
     background-color: var(--orange-color);
     color: #FFFFFF;
     transition: color, background-color .5s ease-in-out;
+    text-transform: uppercase;
 }
 
 .helping-you-thrive__link:hover {
@@ -204,6 +230,7 @@ body {
     background-color: #F4F9E2;
     margin-left: 38px;
     color: var(--orange-color);
+    text-transform: uppercase;
 }
 
 .i-do:hover {
@@ -216,7 +243,6 @@ body {
     color: #F4F9E2;
 }
 
-
 /******why_thrive******/
 
 .why-thrive {
@@ -228,7 +254,7 @@ body {
 }
 
 .why-thrive__content {
-    width: 70%;
+    width: ;
     padding: 150px 180px 95px 78px;
     display: flex;
     justify-content: space-between;
@@ -257,7 +283,7 @@ body {
 .why-thrive__img {
     width: 525px;
     height: 604px;
-    background-image: url('../image/why_thrive.png');
+    background-image: url();
 }
 
 /*******about-us******/
@@ -277,6 +303,7 @@ body {
     font-weight: 400;
     min-width: 100px;
     margin-top: 8px;
+    text-transform: uppercase;
 }
 
 .about-us__text {
@@ -304,6 +331,7 @@ body {
     justify-content: center;
     align-items: center;
     color: rgba(34, 53, 111, 0.5);
+    text-transform: uppercase;
 }
 
 
@@ -321,30 +349,95 @@ body {
     justify-content: center;
     align-items: center;
     padding: 95px 60px 211px 78px;
+    position: relative;
 }
 
 .we-can-help__heading-small-card {
-    width: 255px;
+    width: 230px;
     display: flex;
+    position: relative;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-size: 32px;
     line-height: 33px;
     color: #FFFFFF;
+    text-transform: capitalize;
 }
 
 
 .we-can-help__heading-small-card::before {
-    content: "  ";
-    position: relative;
-    top: 0;
-    padding-top: 23px;
-    border-top: 2px solid #FFFFFF;
-    width: 100%;
-    display: flex;
+    content: "";
+    position: absolute;
+    top: -23px;
+    width: 255px;
+    display: block;
+    height: 1px;
+    background-color:  #FFFFFF;
 }
 
+.we-can-help__heading-small-card::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -15px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    transform: translateY(-50%);
+}
+
+.we-can-help__big-cards-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.we-can-help__big-card {
+    min-height: 480px;
+    width: 480px;
+    padding: 126px 219px 282px 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.we-can-help__heading-big-card {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.we-can-help__heading-big-card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    top: -30px;
+    left: -32px;
+    width: 340px;
+    background-color: #FFFFFF;
+}
+
+.we-can-help__heading-big-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%)
+}
+
+/******background-color-card******/
 
 .pink {
     background-color: #FFE2DE;
@@ -362,6 +455,47 @@ body {
     background-color: var(--blue-color);
 }
 
+.dark-blue {
+    background-color: var(--dark-blue-color);
+}
+
+.light-grey {
+    background-color: #DEE1FF;
+}
+
+.purple {
+    background-color: #8F00FF;
+}
+
 .light-green-heading {
     margin-top: 30px;
+}
+
+.light-green-heading::before {
+    content: "";
+    position: absolute;
+    top: -35%;
+    width: 127%;
+    display: block;
+    height: 1px;
+    background-color:  #FFFFFF;
+}
+
+.light-green-heading::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    transform: translateY(-50%);
+}
+
+.nutrition {
+    background-size: cover;
+    background-image: url('../image/nutrition.png');
+    background-repeat: no-repeat;
 }
