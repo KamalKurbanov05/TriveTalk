@@ -508,6 +508,7 @@ section {
 
 .also-know__link {
     font-size: 16px;
+    width: 154px;
     line-height: 23px;
     color: var(--orange-color);
     font-weight: 700;
@@ -565,6 +566,7 @@ section {
 
 .contact-us__link {
     font-size: 16px;
+    width: 156px;
     font-weight: 700;
     line-height: 23px;
     color: var(--sky-color);
@@ -637,4 +639,101 @@ section {
     background-size: cover;
     background-image: url('../image/nutrition.png');
     background-repeat: no-repeat;
+}
+
+
+/*****footer*******/
+
+.footer_content {
+    display: flex;
+    min-height: 380px;
+}
+
+
+.footer__cards-block {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;    
+    align-items: center;
+    padding: 68px;
+}
+
+.footer__img-block {
+    width: 570px;
+    height: 380px;
+}
+
+.footer__img {
+    height: 100%;
+}
+
+.footer__card {
+    width: 233px;
+    min-height: 208px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__heading-card {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 10px;
+    color: var(--dark-blue-color);
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.footer__text-card {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(34, 53, 111, 0.5);
+}
+
+.footer__border {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    height: 172px;
+    padding-right: 52px;
+}
+
+.footer__contact-block {
+    margin-bottom: 26px;
+}
+
+.footer__copyright {
+    background-color: var(--sky-color);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+    min-height: 80px;
+}
+
+.center{
+    margin-bottom: 36px;
+}
+
+.right {
+    max-width: 110px;
+}
+
+.mail {
+    color: #006DFF;
+}
+
+/* не сработало, разобрать с Шамилем  */
+.footer__border:nth-child(3) {
+    border: 0;
+}
+
+.last_card {
+    border: 0
+}
+
+
+.© {
+    width: 9px;
+    height: 12px;
+    margin-right: 6px;
 }
