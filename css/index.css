@@ -463,8 +463,57 @@ section {
     font-size: 16px;
     line-height: 25px;
     color: rgba(34, 53, 111, 0.5);
-    ;
 }
+
+/*******also-know*******/
+
+
+.also-know {
+    display: flex;
+    min-height: 800px;
+    margin-top: 40px;
+}
+
+.also-know__img {
+    width: 480px;
+    height: 100%;
+}
+
+.also-know__content {
+    padding: 103px 175px 42px 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.also-know__heading {
+    font-size: 16px;
+    line-height: 12px;
+    color: var(--dark-blue-color)
+}
+
+.also-know__text {
+    font-size: 36px;
+    line-height: 52px;
+    color: var(--dark-blue-color);
+}
+
+.also-know__emblem {
+    color: var(--sky-color);
+}
+
+.also-know__link {
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--orange-color);
+    font-weight: 700;
+    transition: font-size .5s ease-in-out
+}
+
+.also-know__link:hover {
+    font-size: 20px;
+}
+
 
 /******background-color-card******/
 
