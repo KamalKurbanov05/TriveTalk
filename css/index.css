@@ -80,7 +80,7 @@ section {
 .header__link-section {
     font-size: 14px;
     font-weight: 400;
-    transition: color, border .2s ease-in-out;
+    transition: font-weight .5s ease-in-out;
 }
 
 .header__link-section:hover {
@@ -97,7 +97,7 @@ section {
     height: 2px;
     width: 100%;
     background-color: var(--dark-blue-color);
-
+    transition: background-color .5s ease-in-out;
 }
 
 .header__img-block {
@@ -435,6 +435,35 @@ section {
     top: 50%;
     left: -20px;
     transform: translateY(-50%)
+}
+
+.we-can-help__card-with-description-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.we-can-help__card-with-description {
+    width: 480px;
+    height: 240px;
+    padding: 55px 77px 37px 105px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.we-can-help__heading-card-description {
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--dark-blue-color)
+}
+
+.we-can-help__text {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(34, 53, 111, 0.5);
+    ;
 }
 
 /******background-color-card******/
