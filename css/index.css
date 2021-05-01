@@ -254,10 +254,8 @@ section {
 }
 
 .why-thrive__content {
-    width: ;
     padding: 150px 180px 95px 78px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -265,6 +263,7 @@ section {
     font-size: 36px;
     font-weight: 700;
     color: #FFFFFF;
+    margin-bottom: 75px;
 }
 
 .why-thrive__bold-text {
@@ -280,10 +279,13 @@ section {
     color: #FFFFFF
 }
 
-.why-thrive__img {
+.why-thrive__img_block {
     width: 525px;
-    height: 604px;
-    background-image: url();
+    min-height: 604px;
+}
+
+.why-thrive__img_block {
+    width: 100%;
 }
 
 /*******about-us******/
